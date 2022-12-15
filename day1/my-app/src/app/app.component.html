@@ -1,12 +1,37 @@
-<h1>Hello Angular Course ... </h1>
+<h1> Hello Angular Course ... </h1>
 <!-- <h3>{{obj.name}}</h3>
 <h3>{{obj.age}}</h3>
 <h2>{{arr[0]}}</h2> -->
 
 <!-- // get text-Box value -->
 <!-- <input type="text" (keyup) ="getVal($event.target.value)" /> -->
-
+<!-- 
 <input type="text" #box (keyup) ="getVal($event.target.value)" />
-<h2>{{currentVal}}</h2>
+<h2>{{currentVal}}</h2> -->
+<!-- <h2>switch case in angular</h2>
+
+<div [ngSwitch] ="color">
+  <h3 *ngSwitchCase="'red'">red color</h3>
+  <h3 *ngSwitchCase="'blue'">blue color</h3>
+  <h3 *ngSwitchCase="'green'">green color</h3>
+</div>
+
+<input type="text" #box (keyup) ="getVal($event)" />
+<h2>{{currentVal}}</h2> -->
+
+<!-- // form in angular -->
+
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+  <input type="text" ngModal name="username" placeholder="name"> <br> <br>
+
+  <input type="text" ngModal name="age" placeholder="age"> <br> <br>
+
+  <input type="text" ngModal name="address" placeholder="address"> <br> <br>
+
+<button>Get usrValue</button>
+</form>
+
+
+
 
 

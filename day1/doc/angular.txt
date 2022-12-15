@@ -1,0 +1,10 @@
+// commands for angular 
+
+1. Create Application : ng new projectName
+2. Create Component   : ng g c component-name
+3. Create module      : ng g n module-name
+4. Create service     : ng g s service-name
+5. Create directive   : ng g d directive-name
+6. Create Auth Guard  : ng g guard guard-name
+7. Run Application    : ng serve
+8. Build Application  : ng build 
