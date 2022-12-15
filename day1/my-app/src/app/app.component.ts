@@ -60,6 +60,23 @@ export class AppComponent {
 // titles= ' components styles in Angular'
 
 // property binding/ interpo
-name= "ajit"
-disable= true;
+// name= "ajit"
+// disable= true;
+
+// ----- loop in NG ---------
+// users = ["ajit", "shakti", "akash", "santu"]
+// usersDetails = [
+//   {name:'ajit', email: 'ajit@xyzgmail.com', phone:'12345678'},
+//   {name:'shakti', email: 'shakti@xyzgmail.com', phone:'12345678'},
+//   {name:'akash', email: 'akash@xyzgmail.com', phone:'12345678'},
+//   {name:'santu', email: 'santu@xyzgmail.com', phone:'12345678'}
+// ]
+
+// nested loop in ng 
+users = [
+    {name:'ajit', email: 'ajit@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
+    {name:'shakti', email: 'shakti@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
+    {name:'akash', email: 'akash@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
+    {name:'santu', email: 'santu@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']}
+  ]
 }

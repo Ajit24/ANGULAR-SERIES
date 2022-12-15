@@ -70,8 +70,22 @@
 <app-login></app-login> -->
 
 <!-- // ------- property binding ---------------- -->
-<input type="text" name="user name" disable value={{name}}> <br> <br>
-<input type="text" name="user name"   [value]=name >
+<!-- <input type="text" name="user name" disable value={{name}}> <br> <br>
+<input type="text" name="user name"   [value]=name > -->
+
+<!-- // --------------- loop in NG ------------- -->
+<!-- <h3 *ngFor="let item of users">name is : {{item}}</h3>
+
+<h3 *ngFor="let item of usersDetails">name is : {{item.name}} {{item.email}}  {{item.phone}}</h3> -->
 
 
+
+<!-- // nested - loop -------------- -->
+<ul *ngFor="let user of users">
+<li>NAME : {{user.name}}</li>
+<li>PHONE: {{user.phone}}</li>
+<ul *ngFor="let account of user.socialAccounts">
+  <li>{{account}}</li>
+</ul>
+</ul>
 
