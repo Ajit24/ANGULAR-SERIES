@@ -57,5 +57,9 @@ export class AppComponent {
 // // this.count++;
 // }
 // styles
-titles= ' components styles in Angular'
+// titles= ' components styles in Angular'
+
+// property binding/ interpo
+name= "ajit"
+disable= true;
 }
