@@ -14,14 +14,24 @@ export class AppComponent {
 // }
 // arr = ['ajit', 'shakti', 'santu']
 //  currentVal = ""
+
+
+// get input values 
 // getVal(val: any)
 // {
 //   console.log(val)
 //   this.currentVal = val
 // }
+ 
 
-getUserValue(val: any){
-  console.log(val)
+// form in angular : 
+// getUserValue(value: any){
+//   console.log(value)
+// }
+
+// make and call a fn
+getName(getName:any){
+  alert(getName)
 }
 
 }

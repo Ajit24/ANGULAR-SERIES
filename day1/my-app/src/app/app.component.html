@@ -21,7 +21,7 @@
 
 <!-- // form in angular -->
 
-<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+<!-- <form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
   <input type="text" ngModal name="username" placeholder="name"> <br> <br>
 
   <input type="text" ngModal name="age" placeholder="age"> <br> <br>
@@ -29,7 +29,11 @@
   <input type="text" ngModal name="address" placeholder="address"> <br> <br>
 
 <button>Get usrValue</button>
-</form>
+</form> -->
+
+<!-- // make and call a fn ------------ -->
+<button (click)="getName('ajit')">click me </button>
+
 
 
 
