@@ -36,10 +36,24 @@ export class AppComponent {
 
 //  --- events in NG -------
 
-getData(val:any){
-  console.log(val)
-}
-getMouse(over:any){
-  console.log(over)
-}
+// getData(val:any){
+//   console.log(val)
+// }
+// getMouse(over:any){
+//   console.log(over)
+// }
+
+// get input values -------------
+// displayVal= ''
+// getValue(val:string){
+// console.log(val)
+// this.displayVal=val
+// }
+
+// counter-app
+// count = 0
+// counter(type:string){
+// type==='add'? this.count++ : this.count--;
+// // this.count++;
+// }
 }
