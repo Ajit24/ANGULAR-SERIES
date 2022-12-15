@@ -32,8 +32,20 @@
 </form> -->
 
 <!-- // make and call a fn ------------ -->
-<button (click)="getName('ajit')">click me </button>
+<!-- <button (click)="getName('ajit')">click me </button> -->
 
+
+<!-- //  events in NG ------------------------------ -->
+<button (click)="getData('Hello')" >call fn</button> <br> <br>
+
+<input type="text" placeholder="event keyUp" #box (keyup)="getData(box.value)"> <br> <br>
+
+<input type="text" placeholder="event keydown" #box1 (keydown)="getData(box1.value)"> <br> <br>
+
+<input type="text" placeholder="event keyBlur" #box3 (keyblur)="getData(box3.value)"> <br>
+
+<h2 (mouseover)="getMouse('over')">mouse over</h2>
+<h2 (mouseleave)="getMouse('leave')">mouse leave</h2>
 
 
 

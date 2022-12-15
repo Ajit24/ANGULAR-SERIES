@@ -29,9 +29,17 @@ export class AppComponent {
 //   console.log(value)
 // }
 
-// make and call a fn
-getName(getName:any){
-  alert(getName)
-}
+// ----make and call a fn ----------------
+// getName(getName:any){
+//   alert(getName)
+// }
 
+//  --- events in NG -------
+
+getData(val:any){
+  console.log(val)
+}
+getMouse(over:any){
+  console.log(over)
+}
 }
