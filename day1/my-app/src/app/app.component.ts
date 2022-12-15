@@ -56,4 +56,6 @@ export class AppComponent {
 // type==='add'? this.count++ : this.count--;
 // // this.count++;
 // }
+// styles
+titles= ' components styles in Angular'
 }
