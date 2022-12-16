@@ -73,10 +73,28 @@ export class AppComponent {
 // ]
 
 // nested loop in ng 
-users = [
-    {name:'ajit', email: 'ajit@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
-    {name:'shakti', email: 'shakti@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
-    {name:'akash', email: 'akash@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
-    {name:'santu', email: 'santu@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']}
-  ]
+// users = [
+//     {name:'ajit', email: 'ajit@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
+//     {name:'shakti', email: 'shakti@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
+//     {name:'akash', email: 'akash@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']},
+//     {name:'santu', email: 'santu@xyzgmail.com', phone:'12345678', socialAccounts:['facebook', 'insta']}
+//   ]
+// }
+
+// make todo list 
+list:any[]=[]
+addTask(item:string)
+{
+this.list.push({id:this.list.length, name:item})
+console.log(this.list)
+}
+// to remove the list
+remove(id: number){
+  console.log(id)
+this.list=this.list.filter(item=>item.id !==id)
+}
+
+
+
+
 }

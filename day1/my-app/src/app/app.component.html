@@ -95,7 +95,7 @@
 <!-- <app-header></app-header> -->
 
 <!-- // bootstrap install  -->
-<h2>bootstrap in angular</h2>
+<!-- <h2>bootstrap in angular</h2>
 
 <ngb-accordion #acc="ngbAccordion">
 	<ngb-panel id="toggle-1" title="First panel">
@@ -123,4 +123,19 @@
 <hr />
 
 <button class="btn btn-sm btn-outline-primary me-2" (click)="acc.toggle('toggle-1')">Toggle first</button>
-<button class="btn btn-sm btn-outline-primary me-2" (click)="acc.toggle('toggle-2')">Toggle second</button>
+<button class="btn btn-sm btn-outline-primary me-2" (click)="acc.toggle('toggle-2')">Toggle second</button> -->
+
+<!-- // ----------- make todo list ----------- -->
+
+<h2>Todo list </h2>
+
+<input type="text" placeholder="type text" #task> <br> <br>
+
+<button (click)="addTask(task.value)">ADD-TASK</button>
+<br> <hr> <hr>
+<ul *ngFor="let item of list">
+  <li>
+ {{item.name}}
+ <button (click)="remove(item.id)">Remove</button>
+  </li>
+</ul>
