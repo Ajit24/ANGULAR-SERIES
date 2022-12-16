@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  // show/hide fn
+  display=true;
+ toggle(){
+this.display=!this.display
+ }
 
+
+
+ 
 }
