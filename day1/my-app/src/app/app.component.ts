@@ -89,12 +89,9 @@ this.list.push({id:this.list.length, name:item})
 console.log(this.list)
 }
 // to remove the list
-remove(id: number){
+removeTask(id: number){
   console.log(id)
 this.list=this.list.filter(item=>item.id !==id)
 }
-
-
-
 
 }
