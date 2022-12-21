@@ -127,7 +127,7 @@
 
 <!-- // ----------- make todo list ----------- -->
 
-<h2>Todo list </h2>
+<!-- <h2>Todo list </h2>
 
 <input type="text" placeholder="type text" #task> <br> <br>
 
@@ -138,4 +138,44 @@
  {{item.name}}
  <button (click)="removeTask(item.id)">Remove</button>
   </li>
-</ul>
+</ul> -->
+
+<!-- // --------- form in NG ----------------- -->
+
+<div class="container">
+  <h2>Registration form in NG</h2>
+  <form #login="ngForm"  (ngSubmit)="submit(login.value)">
+<div class="form-group">
+  <label for="firstname">FirstName:</label> <br>
+  <input type="text" name="firstname" id="" class="form-control" ngModel>
+</div>
+<pre></pre>
+<div class="form-group">
+  <label for="lastname">LastName:</label> <br>
+  <input type="text" name="lastname" id="" class="form-control" ngModel>
+</div>
+<pre></pre>
+<div class="form-group">
+  <label for="email">Email:</label> <br>
+  <input type="text" name="email" id="" class="form-control" ngModel>
+</div>
+<pre></pre>
+<div class="form-group">
+  <label for="password">Password:</label> <br>
+  <input type="password" name="password" id="" class="form-control" ngModel>
+</div>
+<pre></pre>
+<button class="btn btn-primary" type="submit">SUBMIT</button>
+
+  </form>
+</div>
+
+<hr>
+<div class="show-form-data">
+
+  <h3>form data </h3>
+ <h4>
+   <!-- {{firstname}} -->
+ </h4>
+
+</div>
