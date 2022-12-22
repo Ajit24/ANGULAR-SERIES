@@ -6,8 +6,21 @@
 } */
 .container{
     text-align: center;
+    padding-top: 30px;
+    border: 3px solid greenyellow;
+    border-radius: 20px;
+    background-color: aquamarine;
 }
 input{
     width: 30%;
 margin-left: 35%;
+}
+label{
+    margin-right: 35%;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+small{
+    color: red;
 }

@@ -143,29 +143,42 @@
 <!-- // --------- form in NG ----------------- -->
 
 <div class="container">
-  <h2>Registration form in NG</h2>
-  <form #login="ngForm"  (ngSubmit)="submit(login.value)">
+  <h2> User's Registration form in Angular !!</h2> <hr>
+  <form #login="ngForm"  (ngSubmit)="submit(login.value); login.reset()">
 <div class="form-group">
   <label for="firstname">FirstName:</label> <br>
-  <input type="text" name="firstname" id="" class="form-control" ngModel>
+  <input type="text" name="firstname" placeholder="  firstname" id="fname" class="form-control" ngModel required #firstname="ngModel">
+</div>
+<div>
+  <small *ngIf="firstname.invalid && firstname.touched">first name is required !!</small>
 </div>
 <pre></pre>
 <div class="form-group">
   <label for="lastname">LastName:</label> <br>
-  <input type="text" name="lastname" id="" class="form-control" ngModel>
+  <input type="text" name="lastname" placeholder=" lastname" id="" class="form-control" ngModel required>
 </div>
 <pre></pre>
 <div class="form-group">
   <label for="email">Email:</label> <br>
-  <input type="text" name="email" id="" class="form-control" ngModel>
+  <input type="text" name="email" placeholder=" email" id="" class="form-control" ngModel required>
 </div>
 <pre></pre>
 <div class="form-group">
   <label for="password">Password:</label> <br>
-  <input type="password" name="password" id="" class="form-control" ngModel>
+  <input type="password" name="password" mdbInput placeholder=" password" id="form1" class="form-control" ngModel required>
 </div>
 <pre></pre>
-<button class="btn btn-primary" type="submit">SUBMIT</button>
+
+<div class="form-group">
+<label for="country">Country</label>
+<select name="country" id="country" [ngModel]="defaultcountry">
+  <option value="australia">Australia</option>
+  <option value="india">India</option>
+  <option value="japan">Japan</option>
+  <option value="us">US</option>
+</select>
+</div>
+<button class="btn btn-primary" type="submit" [disabled]="!login.valid">SUBMIT</button>
 
   </form>
 </div>
@@ -174,8 +187,7 @@
 <div class="show-form-data">
 
   <h3>form data </h3>
- <h4>
-   <!-- {{firstname}} -->
- </h4>
-
+<p>
+ FirstName: {{login.value.firstname}}
+</p>
 </div>

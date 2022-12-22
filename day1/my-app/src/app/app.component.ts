@@ -9,12 +9,12 @@ export class AppComponent {
   title = 'my-app';
   color = 'sdgsd';
 
-  login={
-    "firstname":"",
-    "lastname":"",
-    "email":"",
-    "password":""
-  }
+  // login={
+  //   "firstname":"",
+  //   "lastname":"",
+  //   "email":"",
+  //   "password":""
+  // }
 // obj = {
 //   name:'ajit',
 //   age:'20'
@@ -101,8 +101,11 @@ export class AppComponent {
 // this.list=this.list.filter(item=>item.id !==id)
 // }
 // form in NG 
+
+displayValue=''
 submit(value:any){
   console.log("form submited", value)
+  // this.displayValue=value
 }
-
+defaultcountry='india'
 }
