@@ -44,6 +44,30 @@ products = [
   "email": "sodales.elit@aol.edu",
   "country": "United Kingdom",
   "numberrange": "7"
+},
+{
+  "name": "ajit pandey",
+  "phone": "95764-34444",
+  "email": "ajit.elit@aol.edu",
+  "country": "india",
+},
+{
+  "name": "shakti dev",
+  "phone": "95764-34343",
+  "email": "shakti.dev@aol.edu",
+  "country": "india",
+},
+{
+  "name": "santu malakar",
+  "phone": "454545-34444",
+  "email": "santu.elit@aol.edu",
+  "country": "india",
+},
+{
+  "name": "jeetu jha",
+  "phone": "36456-34444",
+  "email": "jeetu.elit@aol.edu",
+  "country": "india",
 }
 ]
 
@@ -138,7 +162,9 @@ products = [
 //   console.log(id)
 // this.list=this.list.filter(item=>item.id !==id)
 // }
-// form in NG 
+
+
+//--------- form in NG -------------
 
 displayValue=''
 submit(value:any){
@@ -149,7 +175,7 @@ defaultcountry='india'
 
 // -------- search & filter
 
-searchText=''
+searchText='';
 
 
 }
