@@ -160,8 +160,9 @@
 <pre></pre>
 <div class="form-group">
   <label for="email">Email:</label> <br>
-  <input type="text" name="email" placeholder=" email" id="" class="form-control" ngModel required>
+  <input type="text" name="email" placeholder=" email" id="" class="form-control" ngModel required  #email="ngModel">
 </div>
+<span> <small *ngIf="email.invalid && email.touched">Email is required !!</small></span>
 <pre></pre>
 <div class="form-group">
   <label for="password">Password:</label> <br>
