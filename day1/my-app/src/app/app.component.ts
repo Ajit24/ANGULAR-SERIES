@@ -9,6 +9,44 @@ export class AppComponent {
   title = 'my-app';
   color = 'sdgsd';
 
+products = [
+{
+  "name": "Lee Davenport",
+  "phone": "(145) 824-1316",
+  "email": "orci.in@google.com",
+  "country": "Russian Federation",
+  "numberrange": "9"
+},
+{
+  "name": "Wing Waters",
+  "phone": "1-613-672-2538",
+  "email": "vitae@aol.couk",
+  "country": "Norway",
+  "numberrange": "4"
+},
+{
+  "name": "Harding Guy",
+  "phone": "(646) 788-8604",
+  "email": "risus@google.net",
+  "country": "Ireland",
+  "numberrange": "4"
+},
+{
+  "name": "Ross Mcmahon",
+  "phone": "(260) 946-3146",
+  "email": "accumsan.convallis.ante@google.couk",
+  "country": "Italy",
+  "numberrange": "5"
+},
+{
+  "name": "Dieter Kennedy",
+  "phone": "(423) 539-0318",
+  "email": "sodales.elit@aol.edu",
+  "country": "United Kingdom",
+  "numberrange": "7"
+}
+]
+
   // login={
   //   "firstname":"",
   //   "lastname":"",
@@ -108,4 +146,10 @@ submit(value:any){
   // this.displayValue=value
 }
 defaultcountry='india'
+
+// -------- search & filter
+
+searchText=''
+
+
 }

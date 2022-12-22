@@ -6,18 +6,21 @@ import {FormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
