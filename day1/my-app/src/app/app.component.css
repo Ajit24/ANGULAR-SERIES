@@ -24,6 +24,18 @@ input.ng-invalid.ng-touched{
 small{
     color: red;
 }
-table, th, tr, td{
-    border: 1px solid blueviolet;
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+
+     
 }
+th{
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+}
+

@@ -11,6 +11,7 @@ export class AppComponent {
 
 products = [
 {
+  "id": "1",
   "name": "Lee Davenport",
   "phone": "(145) 824-1316",
   "email": "orci.in@google.com",
@@ -18,6 +19,7 @@ products = [
   "numberrange": "9"
 },
 {
+  "id": "2",
   "name": "Wing Waters",
   "phone": "1-613-672-2538",
   "email": "vitae@aol.couk",
@@ -25,6 +27,7 @@ products = [
   "numberrange": "4"
 },
 {
+  "id": "3",
   "name": "Harding Guy",
   "phone": "(646) 788-8604",
   "email": "risus@google.net",
@@ -32,6 +35,7 @@ products = [
   "numberrange": "4"
 },
 {
+  "id": "4",
   "name": "Ross Mcmahon",
   "phone": "(260) 946-3146",
   "email": "accumsan.convallis.ante@google.couk",
@@ -39,6 +43,7 @@ products = [
   "numberrange": "5"
 },
 {
+  "id": "5",
   "name": "Dieter Kennedy",
   "phone": "(423) 539-0318",
   "email": "sodales.elit@aol.edu",
@@ -46,27 +51,38 @@ products = [
   "numberrange": "7"
 },
 {
+  "id": "6",
   "name": "ajit pandey",
   "phone": "95764-34444",
   "email": "ajit.elit@aol.edu",
   "country": "india",
 },
 {
+  "id": "7",
   "name": "shakti dev",
   "phone": "95764-34343",
   "email": "shakti.dev@aol.edu",
   "country": "india",
 },
 {
+  "id": "8",
   "name": "santu malakar",
   "phone": "454545-34444",
   "email": "santu.elit@aol.edu",
   "country": "india",
 },
 {
+  "id": "9",
   "name": "jeetu jha",
   "phone": "36456-34444",
   "email": "jeetu.elit@aol.edu",
+  "country": "india",
+},
+{
+  "id": "10",
+  "name": "akash",
+  "phone": "99444-37654",
+  "email": "akash.r@act.edu",
   "country": "india",
 }
 ]
