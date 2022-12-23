@@ -12,11 +12,15 @@
     background-color: aquamarine;
 }
 input{
+    border: 2px solid green;
+    border-radius: 10px;
     width: 30%;
-margin-left: 35%;
+    height: 45px;
+margin-left: 5%;
 }
 label{
-    margin-right: 35%;
+    margin-right: 65%;
+    color: red;
 }
 input.ng-invalid.ng-touched{
     border: 1px solid red;
@@ -37,5 +41,38 @@ th{
     background-color: red;
     border: 2px solid red;
     color: white;
+}
+h2{
+    text-align: center;
+}
+/* nav{
+    height: 45px;
+    border: 2px solid red;
+} */
+nav img {
+    width: 70px;
+
+}
+nav{
+    background-color: skyblue;
+    padding: 10px;
+    height: 65px;
+}
+ul{
+    float: right;
+    /* display: flex;
+    gap: 25px; */
+    list-style-type: none;
+
+}
+ul li {
+    display:inline-block;
+    padding: 20px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
 }
 
