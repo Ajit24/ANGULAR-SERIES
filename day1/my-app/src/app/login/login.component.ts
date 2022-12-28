@@ -10,29 +10,46 @@ export class LoginComponent implements OnInit{
 
   signupUsers:any[]=[];
   signupObj:any={
-    name:'',
+    userName:'',
     email: '',
     password:''
   }
 
   loginObj:any={
-    name:'',
+    userName:'',
     password:''
   }
 
 constructor(){}
 
 ngOnInit(): void {
-  
+  const localData = localStorage.getItem('signupUsers')
+  if(localData != null){
+    this.signupUsers= JSON.parse(localData);
+  }
 }
 
-onSignup(){
+onSignUp(){
   this.signupUsers.push(this.signupObj);
   localStorage.setItem('signupUsers', JSON.stringify(this.signupUsers))
-    }
+   
+ this.signupObj={
+    userName:'',
+    email: '',
+    password:''
+  }
+
+}
   
     onLogin(){
-  
+
+      debugger;
+  const isUserExist = this.signupUsers.find(m => m.userName == this.loginObj.userName && m.password == this.loginObj.password)
+  if( isUserExist != undefined){
+    alert('user login successfully')
+  }else{
+    alert('wrong credentials ... Please Check ')
+  }
     }
   
 

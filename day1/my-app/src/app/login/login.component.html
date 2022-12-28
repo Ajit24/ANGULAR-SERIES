@@ -1,5 +1,4 @@
-
-<div class="heading">
+<!-- <div class="heading">
     <h2>login works!</h2> <hr>
 <form class="login-form" action="">
 <label for="">SignUp</label>
@@ -28,5 +27,33 @@
         <button (click)="onLogin()">Login</button>
     </form>
 </div>
+
+</div> -->
+
+<!-- //------------------- login form ------------------------ -->
+
+<div class="topContainer">
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="" [(ngModel)]="signupObj.userName">
+					<input type="email" name="email" placeholder="Email" required="" [(ngModel)]="signupObj.email">
+					<input type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="signupObj.password">
+					<button (click)="onSignUp()">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="userName" placeholder="user name" required="" [(ngModel)]="loginObj.userName">
+					<input type="password" name="pssword" placeholder="Password" required="" [(ngModel)]="loginObj.password">
+					<button (click)="onLogin()">Login</button>
+				</form>
+			</div>
+	</div>
 
 </div>
