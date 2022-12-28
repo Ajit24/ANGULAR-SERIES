@@ -3,19 +3,30 @@
     <h2>login works!</h2> <hr>
 <form class="login-form" action="">
 <label for="">SignUp</label>
-<div>
-    <label for="">Name:</label> <br>
-    <input type="text" placeholder=" type your name">
-</div> <br>
-<div>
-    <label for="">Email:</label> <br>
-    <input type="text" placeholder=" type your email">
-</div> <br>
-<div>
-    <label for="">Password:</label> <br>
-    <input type="password" placeholder=" type your password">
-</div> <br>
 
+    <label for="">Name:</label> <br>
+    <input type="text" name="name" placeholder=" type your name" [(ngModel)]="signupObj.name/>
+</br>
+
+    <label for="">Email:</label> <br>
+    <input type="text" name="email" placeholder=" type your email" [(ngModel)]="signupObj.email"/>
+ <br>
+
+    <label for="">Password:</label> <br>
+    <input type="password" name="pswd" placeholder=" type your password" [(ngModel)]="signupObj.password"/>
+ <br>
+<button (click)="onSignup()">Sign-up</button>
 
 </form>
+<br>
+
+<div>
+    <form action="">
+        <label for="">Login</label> <br> <br>
+        <input type="text" name="name" id="" placeholder="email" [(ngModel)]="loginObj.name"/> 
+        <input type="password" name="pswd" id="" placeholder="password" [(ngModel)]="loginObj.password"/>
+        <button (click)="onLogin()">Login</button>
+    </form>
+</div>
+
 </div>
