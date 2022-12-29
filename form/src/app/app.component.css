@@ -1,0 +1,19 @@
+.main{
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+.nav {
+    height: 80px;
+    border: 2px solid red;
+    background-color: aquamarine;
+}
+img{
+    width: 10%;
+    margin-right: 78%;
+    padding-top: 15px;
+}
+a{
+    gap: 20px;
+}
