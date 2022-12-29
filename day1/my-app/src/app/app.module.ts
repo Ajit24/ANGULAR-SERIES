@@ -9,6 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchPipe } from './search.pipe';
 import { FooterComponent } from './footer/footer.component';
+import { ApiComponent } from './api/api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,15 +18,23 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     HeaderComponent,
     SearchPipe,
-    FooterComponent
+    FooterComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     NgbModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+
+
+
+ }

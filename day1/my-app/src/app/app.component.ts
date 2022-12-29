@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsersDataService } from './services/users-data.service';
 
 @Component({
   selector: 'app-root',
@@ -193,6 +194,16 @@ defaultcountry='india'
 
 
 searchText='';
+
+// api call 
+users:any
+constructor(private userData:UsersDataService){
+userData.users().subscribe((data)=>{
+  this.users=data
+  console.log("data",data)
+});
+// console.log(this.users);
+}
 
 
 }
